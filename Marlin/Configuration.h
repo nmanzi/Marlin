@@ -757,9 +757,9 @@
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
   // BIQU B1
-  #define DEFAULT_bedKp 100.65
-  #define DEFAULT_bedKi 14.82
-  #define DEFAULT_bedKd 455.69
+  #define DEFAULT_bedKp 111.1126
+  #define DEFAULT_bedKi 20.7300
+  #define DEFAULT_bedKd 397.0423
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
