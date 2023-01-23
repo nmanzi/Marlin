@@ -223,23 +223,18 @@
 //
 // MAX Temperature Sensors
 //
-#ifndef TEMP_0_MOSI_PIN
-  #define TEMP_0_MOSI_PIN                   PE14
-#endif
-#ifndef TEMP_0_MISO_PIN
-  #define TEMP_0_MISO_PIN                   PA14
-#endif
-#ifndef TEMP_0_SCK_PIN
-  #define TEMP_0_SCK_PIN                    PE15
-#endif
-#ifndef TEMP_0_CS_PIN
-  #define TEMP_0_CS_PIN                     PD12
-#endif
+//MAX31865 MnP
+#define TEMP_0_MISO_PIN PA14
+#define TEMP_0_SCK_PIN PE15
+#define TEMP_0_MOSI_PIN PE14
+#define TEMP_0_CS_PIN PD12
 
 //
-// Other Temp Sensors
+// Temp Sensors
 // 
-
+#ifndef TEMP_0_PIN
+  #define TEMP_0_PIN                        PA2   // TH0
+#endif
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                        PA3   // TH1
 #endif
