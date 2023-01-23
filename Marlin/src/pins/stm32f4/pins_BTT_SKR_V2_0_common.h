@@ -205,6 +205,7 @@
   #define E0_CS_PIN                         PC6
 #endif
 
+/* E1 used for MAX thermo
 #ifndef E1_STEP_PIN
   #define E1_STEP_PIN                       PD11
 #endif
@@ -217,13 +218,28 @@
 #ifndef E1_CS_PIN
   #define E1_CS_PIN                         PD12
 #endif
+*/
 
 //
-// Temperature Sensors
+// MAX Temperature Sensors
 //
-#ifndef TEMP_0_PIN
-  #define TEMP_0_PIN                        PA2   // TH0
+#ifndef TEMP_0_MOSI_PIN
+  #define TEMP_0_MOSI_PIN                   PE14
 #endif
+#ifndef TEMP_0_MISO_PIN
+  #define TEMP_0_MISO_PIN                   PA14
+#endif
+#ifndef TEMP_0_SCK_PIN
+  #define TEMP_0_SCK_PIN                    PE15
+#endif
+#ifndef TEMP_0_CS_PIN
+  #define TEMP_0_CS_PIN                     PD12
+#endif
+
+//
+// Other Temp Sensors
+// 
+
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN                        PA3   // TH1
 #endif
